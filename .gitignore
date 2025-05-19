@@ -1,0 +1,13 @@
+#environment
+my_environment/
+
+#logs
+.log
+
+#pycache
+__pycache__/
+*.py[cod]
+
+#Local Sqlite3 db
+db.sqlite3
+

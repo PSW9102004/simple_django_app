@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Blog Home</title></head>
+<body>
+  <h1>All Posts</h1>
+  <ul>
+    {% for post in posts %}
+      <li><a href="/{{ post.pk }}/">{{ post.title }}</a> — {{ post.published_at }}</li>
+    {% empty %}
+      <li>No posts yet.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
